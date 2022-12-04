@@ -1,0 +1,147 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  display: block;
+  margin: 100px auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+.navbar-brand img {
+  width: 90px;
+  height: auto;
+}
+.custom-navbar {
+  background-color: #2c2c37 !important;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+.app-links {
+  display: flex;
+  justify-content: left;
+  margin: 25px 10px;
+}
+.navigation-links a,
+.app-links a {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link,
+.yoga-link,
+.weather-link,
+.yogurt-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 1200px;
+}
+.text-center {
+  text-align: center !important;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3,
+  .email-link {
+    font-size: 16px;
+  }
+
+  p,
+  .contact-link,
+  .about-link,
+  .yoga-link,
+  .weather-link,
+  .yogurt-link {
+    font-size: 14px;
+  }
+  .custom-yoga-link,
+  .custom-weather-link,
+  .custom-yogurt-link {
+    margin-top: 5px;
+  }
+  .navbar-brand img {
+    width: 50px;
+    height: auto;
+  }
+  .navigation-links {
+    margin-top: 20px;
+  }
+}
